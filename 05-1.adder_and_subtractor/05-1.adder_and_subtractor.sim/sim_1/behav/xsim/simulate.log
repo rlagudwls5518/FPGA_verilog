@@ -1,0 +1,3 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+$finish called at time : 60 ns : File "D:/FPGA/ai2/05-1.adder_and_subtractor/05-1.adder_and_subtractor.srcs/sim_1/new/tb_adder_suber.v" Line 40

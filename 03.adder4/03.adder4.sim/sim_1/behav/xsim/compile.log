@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ai2/02.adder/02.adder.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ai2/03.adder4/03.adder4.srcs/sources_1/new/full_adder4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ai2/02.adder/02.adder.srcs/sources_1/new/half_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module half_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ai2/03.adder4/03.adder4.srcs/sim_1/new/tb_full_adder4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_full_adder4

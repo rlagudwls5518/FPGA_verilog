@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../05-1.adder_and_subtractor.srcs/sources_1/new/adder_suber.v" \
+"../../../../05-1.adder_and_subtractor.srcs/sim_1/new/tb_adder_suber.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ai2/05.decoder/05.decoder.srcs/sources_1/new/priority_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module priority_encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ai2/05.decoder/05.decoder.srcs/sim_1/new/tb_priority_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_priority_encoder

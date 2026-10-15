@@ -1,0 +1,9 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/FPGA/ai2/04.mux_dec_encoder_compare/04.mux_dec_encoder_compare.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+D:/FPGA/ai2/04.mux_dec_encoder_compare/04.mux_dec_encoder_compare.srcs/sim_1/new/tb_mux2_1.v,1791946277,verilog,,,,tb_mux2_1,,,,,,,,
+D:/FPGA/ai2/04.mux_dec_encoder_compare/04.mux_dec_encoder_compare.srcs/sim_1/new/tb_mux_4bit.v,1791953290,verilog,,,,tb_mux_4bit,,,,,,,,
+D:/FPGA/ai2/04.mux_dec_encoder_compare/04.mux_dec_encoder_compare.srcs/sources_1/new/mux.v,1791945302,verilog,,D:/FPGA/ai2/04.mux_dec_encoder_compare/04.mux_dec_encoder_compare.srcs/sim_1/new/tb_mux2_1.v,,mux2_1,,,,,,,,
+D:/FPGA/ai2/04.mux_dec_encoder_compare/04.mux_dec_encoder_compare.srcs/sources_1/new/mux_4bit.v,1791955728,verilog,,D:/FPGA/ai2/04.mux_dec_encoder_compare/04.mux_dec_encoder_compare.srcs/sim_1/new/tb_mux_4bit.v,,mux_4bit,,,,,,,,

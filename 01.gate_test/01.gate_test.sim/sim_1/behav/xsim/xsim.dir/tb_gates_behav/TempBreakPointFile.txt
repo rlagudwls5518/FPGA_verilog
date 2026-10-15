@@ -1,0 +1,2 @@
+Breakpoint File Version 1.0
+20,true,"D:/FPGA/ai2/01.gate_test/01.gate_test.srcs/sim_1/new/tb_gates.v"
