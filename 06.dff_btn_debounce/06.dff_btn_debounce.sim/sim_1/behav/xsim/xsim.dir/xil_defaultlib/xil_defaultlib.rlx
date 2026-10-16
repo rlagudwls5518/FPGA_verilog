@@ -1,0 +1,11 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/FPGA/ai2/06.dff_btn_debounce/06.dff_btn_debounce.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+D:/FPGA/ai2/06.dff_btn_debounce/06.dff_btn_debounce.srcs/sim_1/new/tb_btn_debounce.v,1792114459,verilog,,,,tb_btn_debounce,,,,,,,,
+D:/FPGA/ai2/06.dff_btn_debounce/06.dff_btn_debounce.srcs/sources_1/new/D_FF.v,1792045338,verilog,,D:/FPGA/ai2/06.dff_btn_debounce/06.dff_btn_debounce.srcs/sources_1/new/clock_80Hz.v,,D_FF,,,,,,,,
+D:/FPGA/ai2/06.dff_btn_debounce/06.dff_btn_debounce.srcs/sources_1/new/clock_80Hz.v,1792111809,verilog,,D:/FPGA/ai2/06.dff_btn_debounce/06.dff_btn_debounce.srcs/sources_1/new/led_toggle.v,,clock_80Hz,,,,,,,,
+D:/FPGA/ai2/06.dff_btn_debounce/06.dff_btn_debounce.srcs/sources_1/new/led_toggle.v,1792049917,verilog,,D:/FPGA/ai2/06.dff_btn_debounce/06.dff_btn_debounce.srcs/sources_1/new/top_btn_debounce.v,,led_toggle,,,,,,,,
+D:/FPGA/ai2/06.dff_btn_debounce/06.dff_btn_debounce.srcs/sources_1/new/top_btn_debounce.v,1792113322,verilog,,D:/FPGA/ai2/06.dff_btn_debounce/06.dff_btn_debounce.srcs/sources_1/new/u_btn_debounce.v,,top_btn_debounce,,,,,,,,
+D:/FPGA/ai2/06.dff_btn_debounce/06.dff_btn_debounce.srcs/sources_1/new/u_btn_debounce.v,1792046656,verilog,,D:/FPGA/ai2/06.dff_btn_debounce/06.dff_btn_debounce.srcs/sim_1/new/tb_btn_debounce.v,,u_btn_debounce,,,,,,,,

@@ -6,7 +6,7 @@ module tick_generator(
     output reg tim_1ms
     );
 
-    reg [16:0] count_ms = 0;
+    reg [$clog2(100_000)-1:0] count_ms = 0;
 
     always @(posedge clk, posedge reset) begin
         if(reset)begin
@@ -15,11 +15,12 @@ module tick_generator(
         end
         else begin
             if(count_ms == (100_000 - 1))begin
-                tim_1ms <= ~tim_1ms;
+                tim_1ms <= 1;
                 count_ms <= 0;
             end
             else begin
                 count_ms <= count_ms + 1; 
+                tim_1ms <= 0;
             end
         end
     end

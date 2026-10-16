@@ -21,16 +21,5 @@ module top_btn_debounce(
         .led(led[0])
     );
 
-    tick_generator u_tick_generator(
-        .reset(reset),
-        .clk(clk),
-        .tim_1ms(w_tim_1ms)
-    );
-
-    led_onoff_500ms u_led_onoff_500ms(
-        .tim_1ms(w_tim_1ms),
-        .led(led[1])
-    );
-
 
 endmodule
