@@ -5,14 +5,12 @@ module led_toggle(
     output reg led
     );
 
-    
     always @(posedge btn, posedge reset) begin
         if(reset)begin
             led <= 1'b0;
         end else begin
             led <= ~led;
         end
-        
     end
 
 endmodule
