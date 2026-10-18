@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1792138555">
-  <File Type="BITSTR-BMM" Name="top_btn_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="top_btn_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="top_btn_timing_summary_init.rpt"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1792312170">
   <File Type="ROUTE-PWR" Name="top_btn_power_routed.rpt"/>
   <File Type="PA-TCL" Name="top_btn.tcl"/>
-  <File Type="OPT-TIMING" Name="top_btn_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="top_btn_opt.dcp"/>
+  <File Type="BITSTR-MMI" Name="top_btn.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="top_btn_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="top_btn_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="top_btn_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="top_btn_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="top_btn_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="top_btn_opt.dcp"/>
   <File Type="OPT-DRC" Name="top_btn_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="top_btn.hwdef"/>
   <File Type="PWROPT-DCP" Name="top_btn_pwropt.dcp"/>
@@ -22,13 +22,14 @@
   <File Type="PLACE-CTRL" Name="top_btn_control_sets_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="top_btn_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="top_btn_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="top_btn.bin"/>
   <File Type="PLACE-TIMING" Name="top_btn_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="top_btn_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="top_btn.bin"/>
+  <File Type="BITSTR-MSK" Name="top_btn.msk"/>
   <File Type="POSTPLACE-PWROPT-TIMING" Name="top_btn_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="top_btn_physopt.dcp"/>
   <File Type="PHYSOPT-DRC" Name="top_btn_drc_physopted.rpt"/>
-  <File Type="BITSTR-MSK" Name="top_btn.msk"/>
+  <File Type="BITSTR-RBT" Name="top_btn.rbt"/>
   <File Type="PHYSOPT-TIMING" Name="top_btn_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="top_btn_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="top_btn_routed.dcp"/>
@@ -36,7 +37,6 @@
   <File Type="ROUTE-DRC" Name="top_btn_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="top_btn_drc_routed.pb"/>
   <File Type="ROUTE-DRC-RPX" Name="top_btn_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="top_btn.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="top_btn_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="top_btn_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="top_btn_methodology_drc_routed.pb"/>
@@ -57,11 +57,11 @@
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="top_btn_timing_summary_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="top_btn_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="top_btn_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="top_btn_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="top_btn.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="top_btn_bus_skew_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="top_btn_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-RBT" Name="top_btn.rbt"/>
   <File Type="BITSTR-NKY" Name="top_btn.nky"/>
+  <File Type="BITSTR-BMM" Name="top_btn_bd.bmm"/>
   <File Type="PDI-FILE" Name="top_btn.pdi"/>
   <File Type="RCFI_FILE" Name="top_btn.rcfi"/>
   <File Type="CFI_FILE" Name="top_btn.cfi"/>
@@ -145,9 +145,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

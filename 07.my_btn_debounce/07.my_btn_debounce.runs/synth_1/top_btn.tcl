@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "D:/FPGA/ai2/07.my_btn_debounce/07.my_btn_debounce.runs/synth_1/top_btn.tcl"
+  variable script "C:/Users/rlagu/Desktop/FPGA/FPGA_verilog/07.my_btn_debounce/07.my_btn_debounce.runs/synth_1/top_btn.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,9 +70,9 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 4
-set_param synth.incrementalSynthesisCache C:/Users/kccistc/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-3188-DESKTOP-7CFQ9ND/incrSyn
-set_param xicom.use_bs_reader 1
+set_param checkpoint.writeSynthRtdsInDcp 1
+set_param chipscope.maxJobs 5
+set_param synth.incrementalSynthesisCache C:/Users/rlagu/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-18988-DESKTOP-T3KEDD9/incrSyn
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
@@ -81,21 +81,20 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir D:/FPGA/ai2/07.my_btn_debounce/07.my_btn_debounce.cache/wt [current_project]
-set_property parent.project_path D:/FPGA/ai2/07.my_btn_debounce/07.my_btn_debounce.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/rlagu/Desktop/FPGA/FPGA_verilog/07.my_btn_debounce/07.my_btn_debounce.cache/wt [current_project]
+set_property parent.project_path C:/Users/rlagu/Desktop/FPGA/FPGA_verilog/07.my_btn_debounce/07.my_btn_debounce.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
-set_property ip_output_repo d:/FPGA/ai2/07.my_btn_debounce/07.my_btn_debounce.cache/ip [current_project]
+set_property ip_output_repo c:/Users/rlagu/Desktop/FPGA/FPGA_verilog/07.my_btn_debounce/07.my_btn_debounce.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  D:/FPGA/ai2/07.my_btn_debounce/07.my_btn_debounce.srcs/sources_1/new/btn_debounce.v
-  D:/FPGA/ai2/07.my_btn_debounce/07.my_btn_debounce.srcs/sources_1/new/led_toggle.v
-  D:/FPGA/ai2/07.my_btn_debounce/07.my_btn_debounce.srcs/sources_1/new/mux.v
-  D:/FPGA/ai2/07.my_btn_debounce/07.my_btn_debounce.srcs/sources_1/new/tick_generator.v
-  D:/FPGA/ai2/07.my_btn_debounce/07.my_btn_debounce.srcs/sources_1/new/top_btn.v
+  C:/Users/rlagu/Desktop/FPGA/FPGA_verilog/07.my_btn_debounce/07.my_btn_debounce.srcs/sources_1/new/btn_debounce.v
+  C:/Users/rlagu/Desktop/FPGA/FPGA_verilog/07.my_btn_debounce/07.my_btn_debounce.srcs/sources_1/new/led_toggle.v
+  C:/Users/rlagu/Desktop/FPGA/FPGA_verilog/07.my_btn_debounce/07.my_btn_debounce.srcs/sources_1/new/mux.v
+  C:/Users/rlagu/Desktop/FPGA/FPGA_verilog/07.my_btn_debounce/07.my_btn_debounce.srcs/sources_1/new/tick_generator.v
+  C:/Users/rlagu/Desktop/FPGA/FPGA_verilog/07.my_btn_debounce/07.my_btn_debounce.srcs/sources_1/new/top_btn.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -106,8 +105,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/FPGA/doc/BASYS3/digilent-xdc-master/Basys3-Master_orginal.xdc
-set_property used_in_implementation false [get_files D:/FPGA/doc/BASYS3/digilent-xdc-master/Basys3-Master_orginal.xdc]
+read_xdc C:/Users/rlagu/Desktop/FPGA/doc/BASYS3/digilent-xdc-master/Basys3-Master_orginal.xdc
+set_property used_in_implementation false [get_files C:/Users/rlagu/Desktop/FPGA/doc/BASYS3/digilent-xdc-master/Basys3-Master_orginal.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

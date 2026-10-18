@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Oct 18 20:42:18 2026
+# Process ID: 11408
+# Current directory: C:/Users/rlagu/Desktop/FPGA/FPGA_verilog/07-1.my_up_counter/07-1.my_up_counter.runs/impl_1
+# Command line: vivado.exe -log top_counter.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_counter.tcl -notrace
+# Log file: C:/Users/rlagu/Desktop/FPGA/FPGA_verilog/07-1.my_up_counter/07-1.my_up_counter.runs/impl_1/top_counter.vdi
+# Journal file: C:/Users/rlagu/Desktop/FPGA/FPGA_verilog/07-1.my_up_counter/07-1.my_up_counter.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top_counter.tcl -notrace

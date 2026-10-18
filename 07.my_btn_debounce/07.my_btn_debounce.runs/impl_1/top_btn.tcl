@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "D:/FPGA/ai2/07.my_btn_debounce/07.my_btn_debounce.runs/impl_1/top_btn.tcl"
+  variable script "C:/Users/rlagu/Desktop/FPGA/FPGA_verilog/07.my_btn_debounce/07.my_btn_debounce.runs/impl_1/top_btn.tcl"
   variable category "vivado_impl"
 }
 
@@ -125,11 +125,11 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param chipscope.maxJobs 4
-  set_param synth.incrementalSynthesisCache C:/Users/kccistc/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-3188-DESKTOP-7CFQ9ND/incrSyn
-  set_param xicom.use_bs_reader 1
+  set_param checkpoint.writeSynthRtdsInDcp 1
+  set_param chipscope.maxJobs 5
+  set_param synth.incrementalSynthesisCache C:/Users/rlagu/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-18988-DESKTOP-T3KEDD9/incrSyn
   open_checkpoint top_btn_routed.dcp
-  set_property webtalk.parent_dir D:/FPGA/ai2/07.my_btn_debounce/07.my_btn_debounce.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/rlagu/Desktop/FPGA/FPGA_verilog/07.my_btn_debounce/07.my_btn_debounce.cache/wt [current_project]
 set_property TOP top_btn [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

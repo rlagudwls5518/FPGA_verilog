@@ -1,8 +1,8 @@
 `timescale 1ns / 1ps
 
 module btn_debounce(
-    input clk, btn, reset,
-    output reg clean_btn = 1'b0
+    input clk, btnU, btnD, reset,
+    output reg [1:0] clean_btn
     );
 
     reg [3:0] count_10ms = 0;
