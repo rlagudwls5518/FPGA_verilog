@@ -2,7 +2,7 @@
 
 
 module up_counter #(
-    parameter CNT_500MS = 49_999_999
+    parameter CNT_10MS = 999_999
 )
 (
     input clk, reset,
@@ -10,7 +10,7 @@ module up_counter #(
     output [15:0]led 
     );
 
-    reg [25:0] r_time_counter; // 50,000,000 주기 500ms
+    reg [19:0] r_time_counter; // 1,000,000 주기 10ms
     reg [15:0] r_up_counter;
     reg btn0_prev;
     reg btn1_prev;
@@ -19,21 +19,21 @@ module up_counter #(
     wire btn0 = clean_btn[0] & ~btn0_prev; // 버튼 U
     wire btn1 = clean_btn[1] & ~btn1_prev; // 버튼 D
 
-    always @(posedge clk, posedge reset) begin // 50ms 타이머
+    always @(posedge clk, posedge reset) begin // 10ms 타이머
         if(reset) begin
-            r_time_counter <= 26'b0;
+            r_time_counter <= 20'b0;
             r_up_counter <= 16'b0;
         end else begin
             if (run_flag) begin
-                if (r_time_counter == CNT_500MS) begin
-                    r_time_counter <= 26'd0;
+                if (r_time_counter == CNT_10MS) begin
+                    r_time_counter <= 20'd0;
                     r_up_counter  <= r_up_counter + 1'b1;
                 end else begin
                     r_time_counter <= r_time_counter + 1'b1;
                 end
             end else if(btn1 & !run_flag) begin
                 r_up_counter <= 16'b0;
-                r_time_counter <= 26'b0;
+                r_time_counter <= 20'b0;
             end
         end
     end
