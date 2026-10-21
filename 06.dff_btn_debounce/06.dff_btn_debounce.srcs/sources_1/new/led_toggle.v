@@ -2,16 +2,15 @@
 
 
 module led_toggle(
-    input clean_btn,
-    output led
+    input reset, clean_btn,
+    output reg led
     );
 
-    reg r_toggle = 1'b0;
-
-    always @(posedge clean_btn) begin
-        r_toggle <= ~r_toggle;        
+    always @(posedge clean_btn or posedge reset) begin
+        if (reset)
+            led <= 1'b0;
+        else
+            led <= ~led;
     end
-
-    assign led = r_toggle ? 1'b1 : 1'b0;
 
 endmodule

@@ -1,0 +1,8 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/FPGA/ai2/10.led_fsm/10.led_fsm.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+D:/FPGA/ai2/10.led_fsm/10.led_fsm.srcs/sim_1/new/tb_led_mealy.v,1792483352,verilog,,,,tb_led_mealy,,,,,,,,
+D:/FPGA/ai2/10.led_fsm/10.led_fsm.srcs/sim_1/new/tb_top_led.v,1792468670,verilog,,,,tb_top_led,,,,,,,,
+D:/FPGA/ai2/10.led_fsm/10.led_fsm.srcs/sources_1/new/led_mealy.v,1792483185,verilog,,D:/FPGA/ai2/10.led_fsm/10.led_fsm.srcs/sim_1/new/tb_led_mealy.v,,led_mealy,,,,,,,,

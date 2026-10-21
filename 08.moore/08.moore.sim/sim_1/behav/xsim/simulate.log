@@ -1,0 +1,4 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+PASS moore_fsm_101
+$finish called at time : 276 ns : File "D:/FPGA/ai2/08.moore/08.moore.srcs/sim_1/new/tb_moore_fsm_101.v" Line 47

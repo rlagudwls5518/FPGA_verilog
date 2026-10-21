@@ -3,22 +3,30 @@
 
 module top_btn_debounce(
     input clk, reset, btnC,
-    output [1:0]led
+    output led
     );
 
     wire w_clean_btn;
     wire w_tim_1ms;
 
-    u_btn_debounce u_u_btn_debounce(
+    debouncer u_debouncer(
         .clk(clk),
         .reset(reset),
-        .btn(btnC),
+        .noisy_btn(btnC),
         .clean_btn(w_clean_btn)
     );
+
+    // u_btn_debounce u_u_btn_debounce(
+    //     .clk(clk),
+    //     .reset(reset),
+    //     .btn(btnC),
+    //     .clean_btn(w_clean_btn)
+    // );
     
     led_toggle u_led_toggle(
+        .reset(reset),
         .clean_btn(w_clean_btn),
-        .led(led[0])
+        .led(led)
     );
 
 

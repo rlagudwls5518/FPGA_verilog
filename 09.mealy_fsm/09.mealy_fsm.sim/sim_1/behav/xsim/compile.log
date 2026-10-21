@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ai2/09.mealy_fsm/09.mealy_fsm.srcs/sources_1/new/bealy_fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bealy_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ai2/08.moore/08.moore.srcs/sim_1/new/tb_moore_fsm_101.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_moore_fsm_101
