@@ -1,0 +1,10 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+FAIL t=111000 data=1 led=0000000000000011 expect_val=00000001
+FAIL t=131000 data=0 led=0000000000000100 expect_val=00000010
+FAIL t=151000 data=1 led=0000000000001011 expect_val=00000101
+FAIL t=171000 data=0 led=0000000000010100 expect_val=00001010
+FAIL t=191000 data=1 led=0000000000101011 expect_val=00010101
+FAIL t=211000 data=1 led=0000000011010111 expect_val=00101011
+FAIL t=231000 data=1 led=0000000000000011 expect_val=11010111
+$finish called at time : 250 ns : File "D:/FPGA/ai2/11_2.my_fsm_1010111_detect/11_2.my_fsm_1010111_detect.srcs/sim_1/new/tb_top_fsm.v" Line 53

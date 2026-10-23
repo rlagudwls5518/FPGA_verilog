@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Oct 22 16:21:20 2026
+# Process ID: 16188
+# Current directory: D:/FPGA/ai2/12-1.stopwatch/12-1.stopwatch.runs/impl_1
+# Command line: vivado.exe -log top_up_down_counter.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_up_down_counter.tcl -notrace
+# Log file: D:/FPGA/ai2/12-1.stopwatch/12-1.stopwatch.runs/impl_1/top_up_down_counter.vdi
+# Journal file: D:/FPGA/ai2/12-1.stopwatch/12-1.stopwatch.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top_up_down_counter.tcl -notrace
