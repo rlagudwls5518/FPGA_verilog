@@ -1,0 +1,14 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/FPGA/ai2/16.microwave/16.microwave.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+D:/FPGA/ai2/16.microwave/16.microwave.srcs/sim_1/new/tb_top_microwave.v,1793236180,verilog,,,,tb_top_microwave,,,,,,,,
+D:/FPGA/ai2/16.microwave/16.microwave.srcs/sources_1/imports/ai2/15.rotary_sw/15.rotary_sw.srcs/sources_1/imports/new/btn_debouncer.v,1793182806,verilog,,D:/FPGA/ai2/16.microwave/16.microwave.srcs/sources_1/new/buzzer.v,,btn_debouncer;debouncer,,,,,,,,
+D:/FPGA/ai2/16.microwave/16.microwave.srcs/sources_1/imports/ai2/15.rotary_sw/15.rotary_sw.srcs/sources_1/new/rotary.v,1793187628,verilog,,D:/FPGA/ai2/16.microwave/16.microwave.srcs/sources_1/imports/new/tick_generator.v,,rotary,,,,,,,,
+D:/FPGA/ai2/16.microwave/16.microwave.srcs/sources_1/imports/new/fnd_controller.v,1793176671,verilog,,D:/FPGA/ai2/16.microwave/16.microwave.srcs/sources_1/new/main_controller.v,,bin_to_brd_4digit;fnd_controller;fnd_digit_display;fnd_digit_select,,,,,,,,
+D:/FPGA/ai2/16.microwave/16.microwave.srcs/sources_1/imports/new/tick_generator.v,1793230783,verilog,,D:/FPGA/ai2/16.microwave/16.microwave.srcs/sources_1/new/top_microwave.v,,tic_generator_1ms;tic_generator_sec;tick_generator,,,,,,,,
+D:/FPGA/ai2/16.microwave/16.microwave.srcs/sources_1/new/buzzer.v,1793233012,verilog,,D:/FPGA/ai2/16.microwave/16.microwave.srcs/sources_1/imports/new/fnd_controller.v,,buzzer,,,,,,,,
+D:/FPGA/ai2/16.microwave/16.microwave.srcs/sources_1/new/main_controller.v,1793183075,verilog,,D:/FPGA/ai2/16.microwave/16.microwave.srcs/sources_1/new/motor.v,,main_controller,,,,,,,,
+D:/FPGA/ai2/16.microwave/16.microwave.srcs/sources_1/new/motor.v,1793235519,verilog,,D:/FPGA/ai2/16.microwave/16.microwave.srcs/sources_1/imports/ai2/15.rotary_sw/15.rotary_sw.srcs/sources_1/new/rotary.v,,motor,,,,,,,,
+D:/FPGA/ai2/16.microwave/16.microwave.srcs/sources_1/new/top_microwave.v,1793184008,verilog,,D:/FPGA/ai2/16.microwave/16.microwave.srcs/sim_1/new/tb_top_microwave.v,,top_microwave,,,,,,,,

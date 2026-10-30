@@ -1,0 +1,27 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto d1c2a58207a04fa3933ae200bad5ab28 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_microwave_behav xil_defaultlib.tb_top_microwave xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.btn_debouncer(DEBOUNCE_LIMIT=100...
+Compiling module xil_defaultlib.debouncer
+Compiling module xil_defaultlib.tic_generator_1ms(TICK_1MS_COUNT...
+Compiling module xil_defaultlib.tic_generator_sec
+Compiling module xil_defaultlib.tick_generator
+Compiling module xil_defaultlib.rotary
+Compiling module xil_defaultlib.main_controller
+Compiling module xil_defaultlib.fnd_digit_select
+Compiling module xil_defaultlib.bin_to_brd_4digit
+Compiling module xil_defaultlib.fnd_digit_display
+Compiling module xil_defaultlib.fnd_controller
+Compiling module xil_defaultlib.buzzer
+Compiling module xil_defaultlib.motor(SERVO_PERIOD=2000,PULSE_0_...
+Compiling module xil_defaultlib.top_microwave
+Compiling module xil_defaultlib.tb_top_microwave
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_microwave_behav

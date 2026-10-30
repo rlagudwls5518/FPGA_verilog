@@ -1,0 +1,24 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ai2/16.microwave/16.microwave.srcs/sources_1/imports/ai2/15.rotary_sw/15.rotary_sw.srcs/sources_1/imports/new/btn_debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-311] analyzing module btn_debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ai2/16.microwave/16.microwave.srcs/sources_1/new/buzzer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module buzzer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ai2/16.microwave/16.microwave.srcs/sources_1/imports/new/fnd_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fnd_controller
+INFO: [VRFC 10-311] analyzing module fnd_digit_select
+INFO: [VRFC 10-311] analyzing module bin_to_brd_4digit
+INFO: [VRFC 10-311] analyzing module fnd_digit_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ai2/16.microwave/16.microwave.srcs/sources_1/new/main_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ai2/16.microwave/16.microwave.srcs/sources_1/new/motor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module motor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ai2/16.microwave/16.microwave.srcs/sources_1/imports/ai2/15.rotary_sw/15.rotary_sw.srcs/sources_1/new/rotary.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rotary
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ai2/16.microwave/16.microwave.srcs/sources_1/imports/new/tick_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tick_generator
+INFO: [VRFC 10-311] analyzing module tic_generator_sec
+INFO: [VRFC 10-311] analyzing module tic_generator_1ms
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ai2/16.microwave/16.microwave.srcs/sources_1/new/top_microwave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_microwave
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ai2/16.microwave/16.microwave.srcs/sim_1/new/tb_top_microwave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top_microwave

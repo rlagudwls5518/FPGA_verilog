@@ -1,0 +1,9 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/FPGA/ai2/15.rotary_sw/15.rotary_sw.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+D:/FPGA/ai2/15.rotary_sw/15.rotary_sw.srcs/sim_1/new/tb_top_rotary.v,1793150867,verilog,,,,tb_top_rotary,,,,,,,,
+D:/FPGA/ai2/15.rotary_sw/15.rotary_sw.srcs/sources_1/imports/new/btn_debouncer.v,1793083411,verilog,,D:/FPGA/ai2/15.rotary_sw/15.rotary_sw.srcs/sources_1/new/rotary.v,,btn_debouncer;debouncer,,,,,,,,
+D:/FPGA/ai2/15.rotary_sw/15.rotary_sw.srcs/sources_1/new/rotary.v,1793146536,verilog,,D:/FPGA/ai2/15.rotary_sw/15.rotary_sw.srcs/sources_1/new/top_rotary.v,,rotary,,,,,,,,
+D:/FPGA/ai2/15.rotary_sw/15.rotary_sw.srcs/sources_1/new/top_rotary.v,1793086559,verilog,,D:/FPGA/ai2/15.rotary_sw/15.rotary_sw.srcs/sim_1/new/tb_top_rotary.v,,top_rotary,,,,,,,,

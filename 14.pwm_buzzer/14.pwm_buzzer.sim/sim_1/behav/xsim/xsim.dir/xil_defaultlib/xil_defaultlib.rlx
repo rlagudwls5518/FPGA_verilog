@@ -1,0 +1,10 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/FPGA/ai2/14.pwm_buzzer/14.pwm_buzzer.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+D:/FPGA/ai2/14.pwm_buzzer/14.pwm_buzzer.srcs/sim_1/new/tb_top_buzzer.v,1793079683,verilog,,,,tb_top_buzzer,,,,,,,,
+D:/FPGA/ai2/14.pwm_buzzer/14.pwm_buzzer.srcs/sources_1/imports/new/btn_debouncer.v,1793064784,verilog,,D:/FPGA/ai2/14.pwm_buzzer/14.pwm_buzzer.srcs/sources_1/new/play_melody.v,,btn_debouncer;debouncer,,,,,,,,
+D:/FPGA/ai2/14.pwm_buzzer/14.pwm_buzzer.srcs/sources_1/new/play_melody.v,1793076045,verilog,,D:/FPGA/ai2/14.pwm_buzzer/14.pwm_buzzer.srcs/sources_1/new/play_poweron_opendoor.v,,play_melody,,,,,,,,
+D:/FPGA/ai2/14.pwm_buzzer/14.pwm_buzzer.srcs/sources_1/new/play_poweron_opendoor.v,1793076024,verilog,,D:/FPGA/ai2/14.pwm_buzzer/14.pwm_buzzer.srcs/sources_1/new/top_buzzer.v,,play_poweron_opendoor,,,,,,,,
+D:/FPGA/ai2/14.pwm_buzzer/14.pwm_buzzer.srcs/sources_1/new/top_buzzer.v,1793076279,verilog,,D:/FPGA/ai2/14.pwm_buzzer/14.pwm_buzzer.srcs/sim_1/new/tb_top_buzzer.v,,top_buzzer,,,,,,,,

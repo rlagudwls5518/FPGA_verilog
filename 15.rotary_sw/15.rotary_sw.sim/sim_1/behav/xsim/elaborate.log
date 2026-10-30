@@ -1,0 +1,20 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto a3fcbf4f416f493ebdc0a6595ef39952 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_rotary_behav xil_defaultlib.tb_top_rotary xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-2861] module 'top_rotary' does not have a parameter named ROTARY_DEBOUNCTIME [D:/FPGA/ai2/15.rotary_sw/15.rotary_sw.srcs/sim_1/new/tb_top_rotary.v:12]
+WARNING: [VRFC 10-2861] module 'top_rotary' does not have a parameter named KEY_DEBOUNC_TIME [D:/FPGA/ai2/15.rotary_sw/15.rotary_sw.srcs/sim_1/new/tb_top_rotary.v:13]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.btn_debouncer(DEBOUNCE_LIMIT=200...
+Compiling module xil_defaultlib.btn_debouncer
+Compiling module xil_defaultlib.debouncer
+Compiling module xil_defaultlib.rotary
+Compiling module xil_defaultlib.top_rotary
+Compiling module xil_defaultlib.tb_top_rotary
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_rotary_behav

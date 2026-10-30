@@ -1,0 +1,10 @@
+# Vivado simulation & waveform files
+*.wdb
+*.vcd
+*.jou
+*.log
+*.sim/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.cache/

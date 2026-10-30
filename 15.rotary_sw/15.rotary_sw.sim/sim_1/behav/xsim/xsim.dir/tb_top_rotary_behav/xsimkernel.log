@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_top_rotary_behav/xsimk.exe -simmode gui -wdb tb_top_rotary_behav.wdb -simrunnum 0 -socket 55348
+Design successfully loaded
+Design Loading Memory Usage: 8016 KB (Peak: 8016 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 16880 KB (Peak: 16880 KB)
+Simulation CPU Usage: 2468 ms

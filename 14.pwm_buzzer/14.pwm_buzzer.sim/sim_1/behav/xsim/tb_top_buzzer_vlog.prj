@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../14.pwm_buzzer.srcs/sources_1/imports/new/btn_debouncer.v" \
+"../../../../14.pwm_buzzer.srcs/sources_1/new/play_melody.v" \
+"../../../../14.pwm_buzzer.srcs/sources_1/new/play_poweron_opendoor.v" \
+"../../../../14.pwm_buzzer.srcs/sources_1/new/top_buzzer.v" \
+"../../../../14.pwm_buzzer.srcs/sim_1/new/tb_top_buzzer.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

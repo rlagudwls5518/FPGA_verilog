@@ -5,8 +5,8 @@ module top_pwm_controller(
     input [2:0] btn,
     input [1:0] sw,
 
-    output pwm_out, pwm_out_led,
-    output [1:0] led_in2,
+    output pwm_out, pwm_out_led, check,
+    output [1:0] in1_in2,
     output [3:0] an,
     output [7:0] seg
     );
@@ -14,7 +14,7 @@ module top_pwm_controller(
     wire w_tick_1ms;
     wire [2:0] w_clean_btn;
 
-    wire w_duty_cycle;
+    wire [3:0] w_duty_cycle;
     wire [1:0]w_sw;
 
     debouncer u_debouncer(
@@ -43,13 +43,14 @@ module top_pwm_controller(
         .clk(clk),
         .reset(reset),
         .tick(w_tick_1ms),
-        .in_data(w_duty_cycle),
+        .in_data({10'b0, w_duty_cycle}),
         .motor_direction(w_sw),
         .an(an),
         .seg(seg)
     );
-
+    
+    assign in1_in2 = w_sw;
     assign sw = w_sw;
-    assign led_in2 = w_sw;
+    assign check = pwm_out;
 
 endmodule

@@ -29,6 +29,7 @@ module fnd_controller(
 
     fnd_digit_display u_fnd_digit_display(
         .sel(w_sel),
+        .motor_direction(motor_direction),
         .d1(w_d1),
         .d10(w_d10),
         .d100(w_d100),
@@ -69,7 +70,8 @@ module bin_to_brd_4digit(
 endmodule
 
 module fnd_digit_display(
-    input [1:0] sel,
+    input [1:0] sel, 
+    input [1:0] motor_direction,
     input [3:0] d1, d10, d100, d1000,
 
     output reg [3:0] an,
@@ -77,8 +79,9 @@ module fnd_digit_display(
     );
 
     reg [3:0]bcd_data;
+    reg [2:0]dir_data;
 
-    always @(sel) begin // sel이 변할때는 언제나 수행함
+    always @(*) begin // sel이 변할때는 언제나 수행함
         case(sel)
          2'b00 : begin
             bcd_data = d1;
@@ -103,20 +106,29 @@ module fnd_digit_display(
         endcase
     end
 
-    always @(bcd_data) begin
-        case(bcd_data)
-            4'd0: seg = 8'b11000000;   // 0
-            4'd1: seg = 8'b11111001;   // 1
-            4'd2: seg = 8'b10100100;   // 2
-            4'd3: seg = 8'b10110000;   // 3
-            4'd4: seg = 8'b10011001;   // 4
-            4'd5: seg = 8'b10010010;   // 5
-            4'd6: seg = 8'b10000010;   // 6
-            4'd7: seg = 8'b11111000;   // 7
-            4'd8: seg = 8'b10000000;   // 8
-            4'd9: seg = 8'b10010000;   // 9
-            default: seg = 8'b11111111;  // all off  
-        endcase 
+    always @(*) begin
+        if (sel == 2'b11) begin
+            case (motor_direction)
+                2'b01:   seg = 8'b1000_1110; // F 
+                2'b10:   seg = 8'b1010_0001; // d 
+                2'b00:   seg = 8'b1001_0010; // S 
+                default: seg = 8'b1111_1111; // 꺼짐
+            endcase
+        end else begin
+            case (bcd_data)
+                4'd0:    seg = 8'b1100_0000; // 0
+                4'd1:    seg = 8'b1111_1001; // 1
+                4'd2:    seg = 8'b1010_0100; // 2
+                4'd3:    seg = 8'b1011_0000; // 3
+                4'd4:    seg = 8'b1001_1001; // 4
+                4'd5:    seg = 8'b1001_0010; // 5
+                4'd6:    seg = 8'b1000_0010; // 6
+                4'd7:    seg = 8'b1111_1000; // 7
+                4'd8:    seg = 8'b1000_0000; // 8
+                4'd9:    seg = 8'b1001_0000; // 9
+                default: seg = 8'b1111_1111; // 꺼짐
+            endcase
+        end
     end 
 
 endmodule

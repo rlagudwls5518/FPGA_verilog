@@ -1,0 +1,95 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Thu Oct 29 09:22:37 2026
+| Host         : DESKTOP-7CFQ9ND running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_microwave_control_sets_placed.rpt
+| Design       : top_microwave
+| Device       : xc7a35t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    17 |
+|    Minimum number of control sets                        |    17 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    71 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    17 |
+| >= 0 to < 4        |     7 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     3 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |             237 |           66 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             140 |           47 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-----------------------------------------------+------------------+------------------+----------------+--------------+
+|  Clock Signal  |                 Enable Signal                 | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+-----------------------------------------------+------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | u_debouncer/u_s2_debouncer/r_btn_state        | reset_IBUF       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | u_debouncer/u_btn0_debouncer/r_btn_state      | reset_IBUF       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | u_debouncer/u_btn1_debouncer/r_btn_state      | reset_IBUF       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | u_debouncer/u_btn2_debouncer/r_btn_state      | reset_IBUF       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | u_debouncer/u_btn3_debouncer/r_btn_state      | reset_IBUF       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | u_debouncer/u_key_debouncer/r_btn_state       | reset_IBUF       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | u_debouncer/u_s1_debouncer/r_btn_state        | reset_IBUF       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | u_main_controller/motor_en_i_1_n_0            | reset_IBUF       |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | u_main_controller/temp_sec[5]_i_1_n_0         | reset_IBUF       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | u_main_controller/temp_min[5]_i_1_n_0         | reset_IBUF       |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG | u_main_controller/r_min_counter[5]_i_1_n_0    | reset_IBUF       |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG | u_main_controller/r_sec_counter[5]_i_1_n_0    | reset_IBUF       |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG | u_rotary/r_counter[7]_i_1_n_0                 | reset_IBUF       |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | u_tick_generator/u_tic_generator_1ms/tick_1ms | reset_IBUF       |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG | u_buzzer/count_70ms_1[23]_i_1_n_0             | reset_IBUF       |                9 |             40 |         4.44 |
+|  clk_IBUF_BUFG | u_buzzer/count_70ms_2[23]_i_1_n_0             | reset_IBUF       |               12 |             46 |         3.83 |
+|  clk_IBUF_BUFG |                                               | reset_IBUF       |               66 |            237 |         3.59 |
++----------------+-----------------------------------------------+------------------+------------------+----------------+--------------+
+
+
